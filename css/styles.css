@@ -1,0 +1,178 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+
+  margin: 0;
+  min-height: 100vh;
+
+background: linear-gradient(
+  180deg,
+  #edf9ff 0%,   /* soft icy blue */
+  #e6f5f8 60%,  /* muted green-blue tint */
+  #f3fcff 100%  /* very light airy finish */
+);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.23;
+  filter: url(#noiseFilter);
+}
+
+header nav {
+  display: flex;               /* horizontal layout of links */
+  justify-content: center;     /* centers the row horizontally */
+  align-items: center;         /* aligns links vertically in line */
+  gap: 30px;                   /* space between each link */
+  flex-wrap: wrap;             /* optional: allows wrapping on small screens */
+}
+
+header nav a {
+  font-size: 1.1em;
+  margin-top: 40px;
+  margin-right: 15px;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+
+.video {
+  max-width: 600px;
+}
+
+.video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+
+
+
+.hero {
+  text-align: center;        /* center everything inside */
+  margin-top: 100px;         /* push down from top */
+}
+
+.hero h1 {
+  font-size: 6em;            /* very big for your name */
+  font-weight: bold;
+  font-family: "Arial", sans-serif;  /* correct comment-free font */
+  margin-bottom: 0.2em;      /* small space to tagline */
+  color: #222222;
+}
+
+.hero h2 {
+  font-size: 3em;            /* very big for your name */
+  font-weight: bold;
+  font-family: "Arial", sans-serif;  /* correct comment-free font */
+  margin-bottom: 0.2em;      /* small space to tagline */
+  color: #222222;
+}
+
+.hero .tagline {
+  font-size: 2em;
+  font-weight: normal;
+  color: #666666;
+  margin-top: 0;
+  max-width: 700px;          /* keeps it in a neat block */
+  margin-left: auto;
+  margin-right: auto;         /* centers the block */
+}
+
+.hero .tagline2 {
+  font-size: 2em;
+  font-weight: normal;
+  color: #111111;
+  margin-top: 0;
+  max-width: 700px;          /* keeps it in a neat block */
+  margin-left: auto;
+  margin-right: auto;         /* centers the block */
+}
+
+.hero .body {
+  font-size: 1em;             /* normal readable size */
+  font-weight: normal;
+  color: #666666;
+  margin-top: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;          /* centers the block */
+  line-height: 1.6;            /* makes it easier to read */
+  text-align: left;            /* optional, you can also center it */
+}
+
+
+.social-links {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.social-links a {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.social-links img {
+  width: 208px;     /* control size here */
+  height: auto;
+  opacity: 0.2;
+  transition: opacity 0.2s ease;
+}
+
+.social-links img:hover {
+  opacity: 1;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.portfolio-item p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+.portfolio-item h3 {
+  margin-bottom: 4px;
+}
+
+.portfolio-item .role {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #444;
+  margin: 0 0 6px 0;
+}
+
+.portfolio-item .description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 12px;
+}
